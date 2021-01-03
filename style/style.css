@@ -1,0 +1,541 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    background-color: #222021;
+    padding: 30px;
+}
+.headerContainner{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: block;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+.logo a{
+    color: white;
+    display: block;
+    font-size: 30px;
+}
+.logo a .red{
+    color: red;
+}
+.headerContainner .nav ul{
+    height: 100%;
+}
+.headerContainner .nav ul li{
+    display: inline-block;
+}
+.headerContainner .nav ul li a{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 500;
+    margin-right: 15px;
+    transition: 0.4s ease all;
+}
+.headerContainner .nav ul li a:last-of-type(){
+    margin-right: 0;
+}
+ .headerContainner .nav ul li a:hover, .headerContainner .nav ul li a.active{ 
+    color: #F35D64;
+    border-bottom: 1px solid red;
+    border-bottom-width: 3px;
+    padding-bottom: 34px;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+@media (max-width: 780px){
+    .headerContainner{
+        width: 95%;
+    }
+    .logo{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .logo a{
+        display: block;
+    }
+    .headerContainner .nav ul li a{
+        font-size: 14px;
+        margin-right: 10px;
+    } 
+}
+@media (max-width: 630px){
+    .logo a, .logo a span{
+        display: block;
+        font-size: 20px;
+    }
+    .headerContainner .nav ul li a{
+        margin-right: 10px;
+    }
+}
+@media (max-width: 550px){
+    .headerContainner{
+        width: 95%;
+    }
+    .logo{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .headerContainner .nav ul li a{
+        font-size: 13px;
+        margin-right: 10px;
+    }
+}
+@media (max-width: 520px){
+    header{
+        padding: 8px;
+    }
+    .checkbtn{
+        display: block;
+      }
+      .logo{
+        font-size: 24px;
+        font-weight: 600;
+    }
+      .headerContainner .nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #232323;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+      }
+      .headerContainner .nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+      .headerContainner .nav ul li a{
+          font-size: 20px;
+      }
+      #check:checked ~ ul{
+        left: 0;
+      }
+}
+.banner{
+    width: 100%;
+    height: 590px;
+    background-image: url(../imgs/slide_01.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    margin-bottom: 150px;
+}
+.banner p{
+    padding-top: 250px;
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+.banner h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    letter-spacing: 4px;
+    color: white;
+    text-transform: uppercase;
+}
+.lastProducts, .aboutSixteen{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    padding-bottom: 15px;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 60px;
+}
+.lastProducts h1, .aboutSixteen h1{
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+.lastProducts .viewAll{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    color: #F35D64;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media (max-width: 550px){
+    .logo a{
+        display: block;
+    }
+    .lastProducts, .aboutSixteen{
+        width: 90%;
+        margin: auto;
+    }
+    .lastProducts h1, .aboutSixteen h1{
+        font-size: 22px;
+        text-align: center;
+    }
+    .lastProducts #left{
+        text-align: left;
+    }
+    .lastProducts .viewAll{
+        font-size: 15px;
+        top: 6px;
+        text-transform: lowercase;
+    }
+}
+/*Boxes*/
+.boxContainner{
+    padding-top: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+}
+.boxOne{
+    margin-bottom: 10px;
+    width: 370px;
+    border: 1px solid #b6b6b6;
+    transition: 0.5s ease all;
+}
+.boxOne:hover{
+    box-shadow: 4px 2px 2px #dfdddd;
+}
+a{
+    text-decoration: 0;
+    color: #646B92;
+    font-size: 18px;
+    font-weight: 600;
+}
+.info{
+    padding: 15px;
+    word-wrap: wrap;
+}
+span{
+    float: right;
+}
+p{
+    color: #8582828a;
+}
+.reviews{
+    text-align: right;
+    color: #F33F3F;
+}
+.hide{
+    display: none;
+}
+.display{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media (max-width: 800px){
+    .boxContainner{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 550px){
+    .boxContainner{
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        width: 300px;
+    }
+    .boxOne{
+        width: 300px;
+    }
+    a{
+        font-size: 17px;
+    }
+    .info{
+        margin-top: 6px;
+        padding: 15px;
+        word-wrap: wrap;
+        font-size: 15px;
+    }
+    .reviews{
+        padding-top: 15px;
+        font-size: 15px;
+    }
+}
+.bestProduct{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+}
+.textContainner{
+    padding-right: 10px;
+}
+.textContainner h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    color: #1A6692;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.textContainner p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    padding-bottom: 30px;
+    color: rgb(85, 84, 84);;
+}
+.textContainner p a{
+    color: #009CDA;
+}
+.textContainner ul {
+    padding-left: 20px;
+}
+.textContainner ul li{
+    list-style-type: square;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 10px;
+}
+.textContainner ul li a:hover, .textContainner ul li:hover{
+    color: #F33F3F;
+}
+.textContainner ul li a{
+    color: rgb(85, 84, 84);
+    font-size: 15px;
+}
+.textContainner button{
+    margin-top: 20px;
+    color: white;
+    background-color: #F33F3F;
+    font-size: 16px;
+    padding: 8px 14px;
+    border: 0;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: 0.5s ease all;
+}
+@media (max-width: 800px){
+    .bestProduct{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.purchase{
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    background-color: #F7F7F7;
+    position: relative;
+    margin-bottom: 30px;
+}
+.purchase h2{
+    color: #1A6692;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.purchase p{
+    padding-left: 15px;
+    padding-bottom: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.purchase button{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    color: white;
+    background-color: #F33F3F;
+    font-size: 16px;
+    padding: 8px 14px;
+    border: 0;
+    border-radius: 6px;
+    transition: 0.5s ease all;
+}
+.textContainner button:hover, .purchase button:hover{
+    background-color: black;
+}
+@media (max-width: 800px){
+    .purchase button{
+        position: relative;
+        left: 15px;
+    }
+}
+@media (max-width: 550px){
+    .bestProduct{
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+        text-align: justify;
+        margin-bottom: 30px;
+    }
+    .bestProduct h3{
+        margin-top: 10px;
+        text-align: left;
+        font-size: 20px;
+    }
+    .purchase{
+        width: 90%;
+    }
+    .purchase h2{
+        font-size: 19px;
+    }
+    .purchase button{
+        position: relative;
+        left: 15px;
+    }
+}
+.btnContainner{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+} 
+button{
+    background-color: #FFFFFF;
+    border: 0;
+    padding: 8px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+button:hover{
+    color:  #F33F3F;
+}
+@media (max-width: 550px){
+    .btnContainner{
+        width: 95%;
+        margin: auto;
+        text-align: center;
+    }
+    button{
+        font-size: 12px;
+        padding: 0px;
+    }
+    button:last-of-type{
+        margin-right: 0px;
+    }
+}
+.imgContainner input, textarea{
+    margin-bottom: 20px;
+    padding: 5px 5px 5px 5px;
+    height: 3rem;
+    width: 40rem;
+    border: 1px solid lightgray;
+    color: rgb(85, 84, 84);
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.imgContainner textarea{
+    height: 7rem;
+}
+.imgContainner button{
+    margin-top: 20px;
+    color: white;
+    background-color: #F33F3F;
+    font-size: 16px;
+    padding: 8px 14px;
+    border: 0;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: 0.5s ease all;
+}
+.imgContainner button:hover{
+    background-color: black;
+}
+.textContainner h3{
+    cursor: pointer;
+}
+@media (max-width: 800px){
+    .lastProducts h1{
+        text-align: center;
+        font-size: 22px;
+    }
+    .imgContainner{
+        text-align: center;
+        padding: 0;
+    }
+    .imgContainner input, textarea{
+        margin-bottom: 20px;
+        padding: 5px 5px 5px 5px;
+        height: 3rem;
+        width: 26rem;
+        border: 1px solid lightgray;
+        color: rgb(168, 167, 167);
+        font-size: 16px;
+    }
+}
+@media (max-width: 550px){
+    .imgContainner{
+        text-align: center;
+        padding: 0;
+    }
+    .imgContainner input, textarea{
+        margin-bottom: 20px;
+        padding: 5px 5px 5px 5px;
+        height: 2rem;
+        width: 20rem;
+        border: 1px solid lightgray;
+        color: rgb(168, 167, 167);
+        font-size: 14px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

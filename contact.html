@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/all.min.css">
+    <style>
+        .banner{
+                width: 100%;
+                height: 500px;
+                background-image: url(./imgs/contact-heading.jpg);
+                background-position: center;
+                background-size: cover;
+                text-align: center;
+                margin-bottom: 150px;
+                }
+        .banner p{
+            padding-top: 200px;
+        }
+        .textContainner{
+            padding-right: 0px;
+            padding-left: 30px;
+        }
+        .textContainner p{
+            text-align: left;
+        }
+        .textContainner ul{
+            text-align: center;
+        }
+        .textContainner ul li{
+            display: inline-block;
+            list-style: none;
+            margin-right: 12px;
+            height: 50px;
+            width: 50px;
+            background-color: lightgray;
+            transition: 0.5s ease-in-out;
+            text-align: center;
+        }
+        .textContainner ul li a i{
+            position: relative;
+            top: 40%;
+            font-size: 20px;
+            transition: 0.5s ease-in-out;
+            color: black;
+        }
+        .textContainner ul li:hover{
+            background-color: #F35D64;
+        }
+        .textContainner ul li a i:hover{
+            color: white;
+        }
+        #title1{
+            padding-top: 10px;
+            border-top: 1px solid lightgray;
+            transition: 0.6s ease all;
+        }
+        .textContainner h3{
+            transition: 0.6s ease all;
+            width: 100%;
+        }
+        .textContainner h3:hover, #title1{
+            color: #F33F96;
+        }
+        .myForm{
+            margin-top: 14px;
+        }
+        @media (max-width: 800px){
+            .bestProduct{
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .imgContainner{
+                width: 90%;
+                margin: auto;
+            }
+            .textContainner{
+                padding: 0;
+                text-align: center;
+            }
+            .textContainner ul li{
+                height: 40px;
+                width: 40px;
+            }
+            .textContainner ul li a i{
+                font-size: 15px;
+                top: 30%;
+            }
+            .mapouter{
+                height: 250px;
+                width: 200px;
+                text-align: left;
+            }
+            .gmap_canvas{
+                height: 250px;
+                width: 200px;
+            }
+            iframe{
+                height: 250px;
+                width: 340px;
+            }
+        }
+        @media (max-width: 720px){
+            .textContainner h3{
+                font-size: 18px;
+            }
+            .textContainner p{
+                font-size: 16px;
+            }
+        }
+        @media (max-width: 350px){
+            .textContainner ul li{
+                height: 30px;
+                width: 30px;
+            }
+            .textContainner ul li a i{
+                font-size: 15px;
+                top: 25%;
+            }
+            iframe{
+                width: 150px;
+                height: 100px;
+                margin: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="headerContainner">
+            <div class="logo"><a href="#">Sixteen <span class="red">Clothing</span></a></div>
+            <nav class="nav">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./products.html">Our Product</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Banner-->
+    <section class="banner">
+        <p>Contact Us</p>
+        <h1>LET’S GET IN TOUCH</h1>
+    </section>
+    <section class="lastProducts">
+        <h1>Our Location on Maps</h1>
+    </section>
+    
+    <section class="bestProduct">
+        <div class="imgContainner">
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:left;height:300px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:600px;}</style></div>
+        </div>
+        <div class="textContainner">
+            <h3>Who we are & What we do?</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisic elit. Sed voluptate nihil eumester consectetur similiqu consectetur.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis.
+            </p>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="lastProducts">
+        <h1>Send A Message</h1>
+    </section>
+    <section class="bestProduct">
+        <div class="imgContainner">
+            <form name="myForm" class="myForm">
+                <input type="text" placeholder="Full Name" name="name">
+                <input type="email" placeholder="Email-Address" name="email">
+                <input type="text" placeholder="Subject" name="subject">
+            </form>
+            <textarea name="myTextArea" id="myTextArea" placeholder="Your Message ..."></textarea>
+            <br>
+            <button>Send Message</button>
+        </div>
+        <div class="textContainner" id="padding">
+            <h3 id="title1">Accordion Title One</h3>
+            <p class="par1">
+                Lorem ipsum dolor sit amet, consectetur adipisic elit. Sed voluptate nihil eumester consectetur similiqu consectetur.
+            </p>
+            <p class="par1">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis.
+            </p>
+            <h3 id="title2">Second Title Here</h3>
+            <p class="par2" style="display: none;">
+                Lorem ipsum dolor sit amet, consectetur adipisic elit. Sed voluptate nihil eumester consectetur similiqu consectetur.
+            </p>
+            <p class="par2" style="display: none;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis.
+            </p>
+            <h3 id="title3">Accordion Title Three</h3>
+            <p class="par3" style="display: none;">
+                Lorem ipsum dolor sit amet, consectetur adipisic elit. Sed voluptate nihil eumester consectetur similiqu consectetur.
+            </p>
+            <p class="par3" style="display: none;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis.
+            </p>
+            <h3 id="title4">Fourth Accordion Title</h3>
+            <p class="par4" style="display: none;">
+                Lorem ipsum dolor sit amet, consectetur adipisic elit. Sed voluptate nihil eumester consectetur similiqu consectetur.
+            </p>
+            <p class="par4" style="display: none;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis.
+            </p>
+        </div>
+    </section>
+    <section id="Hicham" style="text-align: center; margin-bottom: 30px;">
+        <a href="https://www.facebook.com/Lofi05/" target="_blank">
+            Hicham Nasir (s) &#128150;
+        </a>
+    </section>
+    <script>
+        var t2 = document.getElementById("title2");
+        var p2 = document.querySelectorAll(".par2");
+        var t3 = document.getElementById("title3");
+        var p3 = document.querySelectorAll(".par3");
+        var t4 = document.getElementById("title4");
+        var p4 = document.querySelectorAll(".par4");
+        t2.onclick = function (){
+            for(var i=0; i<p2.length; i++){
+                if (p2[i].style.display === "none") {
+                    p2[i].style.display = "block";
+                } else {
+                    p2[i].style.display = "none";
+                }
+            }
+        }
+        t3.onclick = function (){
+            for(var i=0; i<p3.length; i++){
+                if (p3[i].style.display === "none") {
+                    p3[i].style.display = "block";
+                } else {
+                    p3[i].style.display = "none";
+                }
+            }
+        }
+        t4.onclick = function (){
+            for(var i=0; i<p4.length; i++){
+                if (p4[i].style.display === "none") {
+                    p4[i].style.display = "block";
+                } else {
+                    p4[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+    <script src="./script/main.js"></script>
+</body>
+</html>

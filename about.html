@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/all.min.css">
+    <style>
+        .banner{
+                width: 100%;
+                height: 500px;
+                background-image: url(./imgs/about-heading.jpg);
+                background-position: center;
+                background-size: cover;
+                text-align: center;
+                margin-bottom: 150px;
+                }
+        .banner p{
+            padding-top: 200px;
+        }
+        .bestProduct{
+            margin-top: 40px;
+        }
+        .textContainner{
+            padding-right: 0px;
+            padding-left: 30px;
+        }
+        .textContainner p{
+            text-align: left;
+        }
+        .textContainner ul{
+            text-align: center;
+        }
+        .textContainner ul li{
+            display: inline-block;
+            list-style: none;
+            margin-right: 12px;
+            height: 50px;
+            width: 50px;
+            background-color: lightgray;
+            transition: 0.5s ease-in-out;
+            text-align: center;
+        }
+        .textContainner ul li a i{
+            position: relative;
+            top: 40%;
+            font-size: 20px;
+            transition: 0.5s ease-in-out;
+            color: black;
+        }
+        .textContainner ul li:hover{
+            background-color: #F35D64;
+        }
+        .textContainner ul li a i:hover{
+            color: white;
+        }
+        .boxContainner{
+            width: 85%;
+            margin: auto;
+        }
+        .boxOne{
+            border: 0;
+            text-align: center;
+        }
+        .reviews{
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 20px;
+        }
+        .BannerTwo{
+            width: 100%;
+            background-image: url(./imgs/services-bg.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            margin-bottom: 150px;
+        }
+        #boxContainner{
+            padding-top: 60px;
+        }
+        .BannerTwo #boxContainner .boxOne{
+            background-color: white;
+        }
+        .BannerTwo #boxContainner .boxOne{
+            box-shadow: none;
+            width: 330px;
+            font-family: sans-serif;
+        }
+        .BannerTwo #boxContainner .boxOne .service{
+            padding: 50px;
+            background-color: #F7F7F7;
+            margin-bottom: 10px;
+        }
+        .BannerTwo #boxContainner .boxOne .backSet{
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            background-color: #F33F3F;
+        }
+        .BannerTwo #boxContainner .boxOne .backSet i{
+            font-size: 45px;
+            color: white;
+            position: relative;
+            top: 30%;
+        }
+        .BannerTwo #boxContainner .boxOne p{
+            padding-top: 30px;
+            color: rgb(49, 49, 49);
+            padding-bottom: 30px;
+        }
+        .BannerTwo #boxContainner .boxOne button{
+            color: white;
+            background-color: #F33F3F;
+            font-size: 16px;
+            padding: 8px 14px;
+            border: 0;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            transition: 0.5s ease all;
+        }
+        .BannerTwo #boxContainner .boxOne button:hover{
+            background-color: black;
+        }
+        
+        @media (max-width: 350px){
+            .textContainner ul li{
+                height: 30px;
+                width: 30px;
+            }
+            .textContainner ul li a i{
+                font-size: 15px;
+                top: 25%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="headerContainner">
+            <div class="logo"><a href="#">Sixteen <span class="red">Clothing</span></a></div>
+            <nav class="nav">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./products.html">Our Product</a></li>
+                    <li><a href="./about.html" class="active">About Us</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Banner-->
+    <section class="banner">
+        <p>ABOUT US</p>
+        <h1>Our Company</h1>
+    </section>
+    <section class="aboutSixteen">
+        <h1>Our Background</h1>
+    </section>
+    <section class="bestProduct">
+            <div class="imgContainner">
+                <img src="./imgs/feature-image.jpg" alt="image">
+            </div>
+            <div class="textContainner">
+                <h3>Who we are & What we do?</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis.
+                </p>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                </ul>
+            </div>
+    </section>
+    <section class="aboutSixteen">
+        <h1>Our Team Members</h1>
+    </section>
+    <!--Members-->
+    <section class="boxContainner" id="boxContainner">
+        <div class="boxOne" id="boxOne">
+            <img src="./imgs/team_01.jpg" alt="first product">
+            <div class="info">
+                <a href="#">Johnny William</a>
+                <p class="reviews">CO-Founder</p>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                
+            </div>
+        </div>
+        <div class="boxOne" id="boxTwo">
+            <img src="./imgs/team_02.jpg" alt="second product">
+            <div class="info">
+                <a href="#">Karry Pitcher</a>
+                <p class="reviews">Product Expert</p>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                
+            </div>
+        </div>
+        <div class="boxOne" id="boxThree">
+            <img src="./imgs/team_03.jpg" alt="third product">
+            <div class="info">
+                <a href="#">Michael Soft</a>
+                <p class="reviews">Chief Marketing</p>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                
+            </div>
+        </div>
+        <div class="boxOne" id="boxFour">
+            <img src="./imgs/team_04.jpg" alt="fourth product">
+            <div class="info">
+                <a href="#">Mary Cool</a>
+                <p class="reviews">Product Specialist</p>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                
+            </div>
+        </div>
+        <div class="boxOne" id="boxFive">
+            <img src="./imgs/team_05.jpg" alt="fifth product">
+            <div class="info">
+                <a href="#">George Walker</a>
+                <p class="reviews">Product Photographer</p>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                
+            </div>
+        </div>
+        <div class="boxOne" id="boxSix">
+            <img src="./imgs/team_06.jpg" alt="sixth product">
+            <div class="info">
+                <a href="#">Kate Town</a>
+                <p class="reviews">General Manager</p>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+            </div>
+        </div>
+    </section>
+    <section class="BannerTwo">
+        <section class="boxContainner" id="boxContainner">
+            <div class="boxOne" id="boxOne">
+                <div class="service">
+                    <div class="backSet"><i class="fas fa-cog"></i></div>
+                </div>
+                <div class="info">
+                    <a href="#">Product Management</a>
+                    <p>Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="boxOne" id="boxTwo">
+                <div class="service">
+                    <div class="backSet"><i class="fas fa-cog"></i></div>
+                </div>
+                <div class="info">
+                    <a href="#">Product Management</a>
+                    <p>Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="boxOne" id="boxThree">
+                <div class="service">
+                    <div class="backSet"><i class="fas fa-cog"></i></div>
+                </div>
+                <div class="info">
+                    <a href="#">Product Management</a>
+                    <p>Lorem ipsum dolor sit amet, consectetur an adipisicing elit. Itaque, corporis nulla at quia quaerat.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="./script/main.js"></script>
+</body>
+</html>

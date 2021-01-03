@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/all.min.css">
+    <style>
+        .banner{
+                width: 100%;
+                height: 500px;
+                background-image: url(./imgs/products-heading.jpg);
+                background-position: center;
+                background-size: cover;
+                text-align: center;
+                margin-bottom: 150px;
+                }
+        .banner p{
+                padding-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="headerContainner">
+            <div class="logo"><a href="#">Sixteen <span class="red">Clothing</span></a></div>
+            <nav class="nav">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+                </label>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./products.html" class="active">Our Product</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Banner-->
+    <section class="banner">
+        <p>NEW ARRIVALS</p>
+        <h1>SIXTEEN PRODUCTS</h1>
+    </section>
+    <div class="btnContainner">
+        <button id="btn1">All Products</button>
+        <button id="btn2">Featured</button>
+        <button id="btn3">Flash Deals</button>
+        <button id="btn4">Last Minute</button>
+    </div>
+    <section class="boxContainner" id="boxContainner">
+        <div class="boxOne" id="boxOne">
+            <img src="./imgs/product_01.jpg" alt="first product">
+            <div class="info">
+                <a href="#">Title Goes Here</a><span>$18.25</span>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                <p class="reviews">Reviews (12)</p>
+            </div>
+        </div>
+        <div class="boxOne" id="boxTwo">
+            <img src="./imgs/product_02.jpg" alt="second product">
+            <div class="info">
+                <a href="#">Title Goes Here</a><span>$16.75</span>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                <p class="reviews">Reviews (24)</p>
+            </div>
+        </div>
+        <div class="boxOne" id="boxThree">
+            <img src="./imgs/product_03.jpg" alt="third product">
+            <div class="info">
+                <a href="#">Title Goes Here</a><span>$32.50</span>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                <p class="reviews">Reviews (36)</p>
+            </div>
+        </div>
+        <div class="boxOne" id="boxFour">
+            <img src="./imgs/product_04.jpg" alt="fourth product">
+            <div class="info">
+                <a href="#">Title Goes Here</a><span>$24.60</span>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                <p class="reviews">Reviews (48)</p>
+            </div>
+        </div>
+        <div class="boxOne" id="boxFive">
+            <img src="./imgs/product_05.jpg" alt="fifth product">
+            <div class="info">
+                <a href="#">Title Goes Here</a><span>$18.75</span>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                <p class="reviews">Reviews (60)</p>
+            </div>
+        </div>
+        <div class="boxOne" id="boxSix">
+            <img src="./imgs/product_06.jpg" alt="sixth product">
+            <div class="info">
+                <a href="#">Title Goes Here</a><span>$12.50</span>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                <p class="reviews">Reviews (72)</p>
+            </div>
+        </div>
+    </section>
+    <script src="./script/main.js"></script>
+</body>
+</html>
